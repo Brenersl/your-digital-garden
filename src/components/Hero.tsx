@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/idamir-hero.jpeg";
 
-const transition = { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] };
+const transition = { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const };
 
 const Hero = () => {
   return (
