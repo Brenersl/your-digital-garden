@@ -1,19 +1,20 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Clock, MapPin } from "lucide-react";
+import { Clock, MapPin } from "lucide-react";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 const contactItems = [
   {
-    icon: MessageCircle,
+    icon: () => <WhatsAppIcon size={28} className="text-primary mx-auto mb-4" />,
     label: "WhatsApp",
     value: "(31) 97130-1409",
   },
   {
-    icon: Clock,
+    icon: () => <Clock size={28} strokeWidth={1.5} className="text-primary mx-auto mb-4" />,
     label: "Horário",
     value: "Seg a Sáb · 08:00 – 20:00",
   },
   {
-    icon: MapPin,
+    icon: () => <MapPin size={28} strokeWidth={1.5} className="text-primary mx-auto mb-4" />,
     label: "Atendimento",
     value: "Presencial e Online",
   },
@@ -49,7 +50,7 @@ const Contact = () => {
               className="bg-background rounded-2xl p-8 text-center"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
-              <item.icon size={28} strokeWidth={1.5} className="text-primary mx-auto mb-4" />
+              {item.icon()}
               <p className="text-sm text-muted-foreground mb-2">{item.label}</p>
               <p className="text-foreground font-medium">{item.value}</p>
             </motion.div>
@@ -67,9 +68,10 @@ const Contact = () => {
             href="https://wa.me/5531971301409?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-primary text-primary-foreground px-10 py-4 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
+            className="inline-flex items-center gap-2.5 bg-primary text-primary-foreground px-10 py-4 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
           >
             Fale comigo pelo WhatsApp
+            <WhatsAppIcon size={18} />
           </a>
         </motion.div>
       </div>
