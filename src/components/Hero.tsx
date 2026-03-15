@@ -14,8 +14,8 @@ const Hero = () => {
           src={heroBg}
           alt=""
           className="w-full h-full object-cover"
-          aria-hidden="true"
-        />
+          aria-hidden="true" />
+        
         {/* Light overlay for readability */}
         <div className="absolute inset-0 bg-background/55" />
         {/* Bottom fade */}
@@ -31,16 +31,16 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={transition}
-          className="order-2 lg:order-1 lg:col-span-6 lg:pr-8 flex flex-col items-center lg:items-start text-center lg:text-left"
-        >
+          className="order-2 lg:order-1 lg:col-span-6 lg:pr-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+          
           <p className="text-accent uppercase tracking-[0.2em] text-xs font-medium mb-4">
             Psicóloga · CRP 04/48538
           </p>
 
           <h1
             className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-[3rem] leading-[1.2] text-foreground mb-5"
-            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.01em" }}
-          >
+            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.01em" }}>
+            
             Acolhimento Profissional
             <br />
             para uma{" "}
@@ -56,8 +56,8 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
-            style={{ boxShadow: "0 4px 14px rgba(0,0,0,0.12)" }}
-          >
+            style={{ boxShadow: "0 4px 14px rgba(0,0,0,0.12)" }}>
+            
             Fale Conosco
             <WhatsAppIcon size={18} />
           </a>
@@ -68,17 +68,17 @@ const Hero = () => {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ...transition, delay: 0.2 }}
-          className="order-1 lg:order-2 lg:col-span-6 flex justify-center lg:justify-end"
-        >
+          className="order-1 lg:order-2 lg:col-span-6 flex justify-center lg:justify-end">
+          
           <img
-            src={heroImg}
+
             alt="Psicóloga Idamir Duarte"
-            className="w-[320px] sm:w-[400px] lg:w-[500px] xl:w-[540px] h-auto object-contain drop-shadow-[0_18px_28px_hsl(var(--foreground)/0.16)]"
-          />
+            className="w-[320px] sm:w-[400px] lg:w-[500px] xl:w-[540px] h-auto object-contain drop-shadow-[0_18px_28px_hsl(var(--foreground)/0.16)]" src="/lovable-uploads/dc50de4b-290c-4de7-a306-cc3254225cff.png" />
+          
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
