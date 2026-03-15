@@ -72,7 +72,7 @@ const Hero = () => {
           
           <img
             alt="Psicóloga Idamir Duarte"
-            className="w-[280px] sm:w-[340px] lg:w-[420px] xl:w-[460px] h-auto object-contain drop-shadow-[0_8px_20px_hsl(var(--foreground)/0.12)]"
+            className="w-[280px] sm:w-[340px] lg:w-[400px] xl:w-[440px] max-h-[75vh] h-auto object-contain drop-shadow-[0_8px_20px_hsl(var(--foreground)/0.12)]"
             src="/lovable-uploads/dc50de4b-290c-4de7-a306-cc3254225cff.png" />
           
         </motion.div>
