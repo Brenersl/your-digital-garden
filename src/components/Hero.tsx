@@ -7,7 +7,7 @@ const transition = { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const };
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-[85vh] flex items-end overflow-hidden">
+    <section id="inicio" className="relative min-h-[90vh] flex items-end overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
