@@ -73,10 +73,7 @@ const Hero = () => {
           <img
             src={heroImg}
             alt="Psicóloga Idamir Duarte"
-            className="w-[300px] sm:w-[380px] lg:w-[440px] xl:w-[490px] object-cover aspect-[3/4] rounded-2xl"
-            style={{
-              boxShadow: "0 12px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06)",
-            }}
+            className="w-[320px] sm:w-[400px] lg:w-[500px] xl:w-[540px] h-auto object-contain drop-shadow-[0_18px_28px_hsl(var(--foreground)/0.16)]"
           />
         </motion.div>
       </div>
