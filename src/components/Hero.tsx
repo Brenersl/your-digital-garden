@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImg from "@/assets/idamir-hero.jpeg";
+import heroImg from "@/assets/idamir-hero.png";
 import heroBg from "@/assets/hero-bg.jpg";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 
