@@ -7,7 +7,7 @@ const transition = { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const };
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-[94vh] flex items-center overflow-hidden">
+    <section id="inicio" className="relative min-h-[85vh] flex items-end overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -25,13 +25,13 @@ const Hero = () => {
       {/* Top accent bar matching the reference */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-accent z-20" />
 
-      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0 items-center relative z-10 pt-24 pb-16">
+      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0 items-end relative z-10 pt-24 pb-0">
         {/* Text Column */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={transition}
-          className="order-2 lg:order-1 lg:col-span-6 lg:pr-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+          className="order-2 lg:order-1 lg:col-span-6 lg:pr-8 flex flex-col items-center lg:items-start text-center lg:text-left pb-16">
           
           <p className="text-accent uppercase tracking-[0.2em] text-xs font-medium mb-4">
             Psicóloga · CRP 04/48538
@@ -68,12 +68,12 @@ const Hero = () => {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ...transition, delay: 0.2 }}
-          className="order-1 lg:order-2 lg:col-span-6 flex justify-center lg:justify-end">
+          className="order-1 lg:order-2 lg:col-span-6 flex justify-center lg:justify-end items-end">
           
           <img
-
             alt="Psicóloga Idamir Duarte"
-            className="w-[320px] sm:w-[400px] lg:w-[500px] xl:w-[540px] h-auto object-contain drop-shadow-[0_18px_28px_hsl(var(--foreground)/0.16)]" src="/lovable-uploads/dc50de4b-290c-4de7-a306-cc3254225cff.png" />
+            className="w-[280px] sm:w-[340px] lg:w-[420px] xl:w-[460px] h-auto object-contain drop-shadow-[0_8px_20px_hsl(var(--foreground)/0.12)]"
+            src="/lovable-uploads/dc50de4b-290c-4de7-a306-cc3254225cff.png" />
           
         </motion.div>
       </div>
