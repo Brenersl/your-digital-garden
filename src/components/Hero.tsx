@@ -33,7 +33,7 @@ const Hero = () => {
           transition={transition}
           className="order-2 lg:order-1 lg:col-span-6 lg:pr-8 flex flex-col items-center lg:items-start text-center lg:text-left pb-16">
           
-          <p className="text-accent uppercase tracking-[0.2em] text-xs font-medium mb-4">
+          <p className="uppercase tracking-[0.2em] text-xs font-medium mb-4" style={{ color: "#5B3A2E" }}>
             Psicóloga · CRP 04/48538
           </p>
 
