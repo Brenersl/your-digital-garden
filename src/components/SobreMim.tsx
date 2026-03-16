@@ -110,6 +110,55 @@ const SobreMim = () => {
         {/* Divider */}
         <div className="w-16 h-px mx-auto mb-16" style={{ backgroundColor: "hsl(var(--gold))" }} />
 
+        {/* Desenvolvimento Profissional Contínuo */}
+        <motion.div {...fadeIn} transition={{ duration: 0.5, delay: 0.18 }} className="mb-16">
+          <div className="flex items-center gap-3 mb-6">
+            <div
+              className="w-10 h-10 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: "hsl(var(--lavender))" }}
+            >
+              <Sparkles size={20} style={{ color: "hsl(var(--olive))" }} />
+            </div>
+            <h3
+              className="text-2xl md:text-3xl text-foreground"
+              style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.01em" }}
+            >
+              Desenvolvimento Profissional Contínuo
+            </h3>
+          </div>
+
+          <div className="space-y-5 text-muted-foreground leading-relaxed text-base md:text-lg mb-8">
+            <p>
+              Acredito que o aprendizado nunca para. Por isso, estou constantemente me atualizando e buscando
+              novas ferramentas para aprimorar meu trabalho clínico e minha capacidade de comunicação.
+            </p>
+            <p>
+              Atualmente estou fazendo um curso de oratória pela <strong>Prudem</strong>, com o objetivo de desenvolver
+              ainda mais minha habilidade de comunicação e transmissão de conhecimento — competências fundamentais tanto
+              para o atendimento clínico quanto para a promoção de palestras e workshops sobre saúde mental.
+            </p>
+          </div>
+
+          {/* Images Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img
+              src={prudemImg1}
+              alt="Idamir Duarte participando de curso de oratória na Prudem"
+              className="rounded-2xl object-cover w-full h-[280px] md:h-[320px]"
+              style={{ boxShadow: "var(--shadow-card)" }}
+            />
+            <img
+              src={prudemImg2}
+              alt="Grupo de participantes do curso de oratória Prudem"
+              className="rounded-2xl object-cover w-full h-[280px] md:h-[320px]"
+              style={{ boxShadow: "var(--shadow-card)" }}
+            />
+          </div>
+        </motion.div>
+
+        {/* Divider */}
+        <div className="w-16 h-px mx-auto mb-16" style={{ backgroundColor: "hsl(var(--gold))" }} />
+
         {/* Terapia de Casais */}
         <motion.div {...fadeIn} transition={{ duration: 0.5, delay: 0.2 }} className="mb-16">
           <div className="flex items-center gap-3 mb-6">
