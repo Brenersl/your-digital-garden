@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Heart, Brain, Target, Quote } from "lucide-react";
+import { GraduationCap, Heart, Brain, Target, Quote, Sparkles } from "lucide-react";
+import prudemImg1 from "@/assets/idamir-prudem-1.png";
+import prudemImg2 from "@/assets/idamir-prudem-2.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 16 },
