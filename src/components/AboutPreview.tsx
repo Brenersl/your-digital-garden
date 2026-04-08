@@ -1,0 +1,62 @@
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import aboutImg from "@/assets/idamir-about.jpeg";
+
+const AboutPreview = () => {
+  return (
+    <section id="sobre" className="py-24 bg-card">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <span className="text-accent uppercase tracking-[0.2em] text-sm font-medium">Sobre</span>
+            <h2
+              className="text-3xl md:text-4xl text-foreground mt-4 mb-6 text-balance"
+              style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
+            >
+              Idamir Duarte
+            </h2>
+            <div className="space-y-5 text-muted-foreground leading-relaxed mb-8">
+              <p>
+                Sou psicóloga formada pela Faculdade Pitágoras, registrada no Conselho Regional de Psicologia sob o{" "}
+                <strong className="text-foreground font-medium">CRP 04/48538</strong>. Minha abordagem é fundamentada na{" "}
+                <strong className="text-foreground font-medium">Terapia Cognitivo-Comportamental (TCC)</strong>, uma das
+                abordagens mais reconhecidas e eficazes da psicologia contemporânea.
+              </p>
+              <p>
+                Minha missão é oferecer um espaço seguro e acolhedor onde cada pessoa possa se sentir ouvida,
+                compreendida e apoiada no processo de autoconhecimento e transformação pessoal.
+              </p>
+            </div>
+            <Link
+              to="/sobre"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
+            >
+              Saiba mais
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <img
+              src={aboutImg}
+              alt="Psicóloga Idamir Duarte"
+              className="rounded-2xl object-cover w-full aspect-[3/4] max-h-[500px]"
+              style={{ boxShadow: "var(--shadow-card)" }}
+            />
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutPreview;
