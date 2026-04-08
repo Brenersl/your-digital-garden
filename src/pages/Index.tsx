@@ -1,11 +1,10 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import SobreMim from "@/components/SobreMim";
-import Specialties from "@/components/Specialties";
-import Testimonials from "@/components/Testimonials";
-import CtaBanner from "@/components/CtaBanner";
-import Contact from "@/components/Contact";
+import AboutPreview from "@/components/AboutPreview";
+import ParaQuem from "@/components/ParaQuem";
+import FAQ from "@/components/FAQ";
+import BlogPreview from "@/components/BlogPreview";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -14,12 +13,11 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
-      <About />
-      <SobreMim />
-      <Specialties />
-      <Testimonials />
-      <CtaBanner />
-      <Contact />
+      <AboutPreview />
+      <ParaQuem />
+      <FAQ />
+      <BlogPreview />
+      <ContactForm />
       <Footer />
       <WhatsAppButton />
     </div>
