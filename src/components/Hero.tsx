@@ -51,16 +51,22 @@ const Hero = () => {
             A terapia é um espaço seguro para você se conhecer, acolher suas emoções e construir uma vida com mais equilíbrio e bem-estar.
           </p>
 
-          <a
-            href="https://wa.me/5531971301409?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
-            style={{ boxShadow: "0 4px 14px rgba(0,0,0,0.12)" }}>
-            
-            Fale Conosco
-            <WhatsAppIcon size={18} />
-          </a>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <a
+              href="/agendamento"
+              className="inline-flex items-center gap-2.5 bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
+              style={{ boxShadow: "0 4px 14px rgba(0,0,0,0.12)" }}>
+              Agendar consulta
+            </a>
+            <a
+              href="https://wa.me/5531971301409?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-foreground font-medium hover:opacity-80 transition-opacity">
+              <WhatsAppIcon size={18} />
+              Falar pelo WhatsApp
+            </a>
+          </div>
         </motion.div>
 
         {/* Image Column */}
