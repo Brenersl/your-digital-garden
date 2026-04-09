@@ -34,7 +34,7 @@ const BlogPreview = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <span className="text-accent uppercase tracking-[0.2em] text-sm font-medium">Blog</span>
+          <span className="text-sage uppercase tracking-[0.2em] text-xs font-medium">Blog</span>
           <h2
             className="text-3xl md:text-4xl text-foreground mt-4 text-balance"
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
@@ -51,24 +51,24 @@ const BlogPreview = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 * (i + 1) }}
-              className="bg-card rounded-2xl p-8 flex flex-col"
+              className="bg-card rounded-2xl p-8 flex flex-col border border-border/40"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
               <h3
-                className="text-xl text-foreground mb-3"
+                className="text-lg text-foreground mb-3 leading-snug"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                {article.title}
+                <span className="border-b border-salmon/30 pb-0.5">{article.title}</span>
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed flex-1 mb-6">
+              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] flex-1 mb-6">
                 {article.description}
               </p>
               <Link
-                to={`/blog`}
-                className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:opacity-80 transition-opacity"
+                to="/blog"
+                className="inline-flex items-center gap-1.5 text-sage text-sm font-medium hover:opacity-80 transition-opacity"
               >
                 Ler mais
-                <ArrowRight size={16} />
+                <ArrowRight size={14} />
               </Link>
             </motion.div>
           ))}
@@ -83,10 +83,10 @@ const BlogPreview = () => {
         >
           <Link
             to="/blog"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
           >
             Ver todos os artigos
-            <ArrowRight size={16} />
+            <ArrowRight size={14} />
           </Link>
         </motion.div>
       </div>

@@ -48,7 +48,7 @@ const ParaQuem = () => {
               transition={{ duration: 0.4, delay: 0.1 * (i + 1) }}
               className="flex items-start gap-4 py-4 border-b border-border last:border-b-0"
             >
-              <CheckCircle size={22} strokeWidth={1.5} className="text-primary mt-0.5 shrink-0" />
+              <CheckCircle size={20} strokeWidth={1.5} className="text-sage mt-0.5 shrink-0" />
               <p className="text-foreground text-base md:text-lg">{item}</p>
             </motion.div>
           ))}

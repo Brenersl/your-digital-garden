@@ -48,8 +48,11 @@
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Geist Sans', system-ui, -apple-system, sans-serif;
 
-    --shadow-card: 0 0 0 1px rgba(139, 94, 60, 0.05), 0 2px 8px rgba(139, 94, 60, 0.06), 0 8px 24px rgba(139, 94, 60, 0.04);
-    --shadow-card-hover: 0 0 0 1px rgba(139, 94, 60, 0.05), 0 4px 12px rgba(139, 94, 60, 0.08), 0 16px 32px rgba(139, 94, 60, 0.06);
+    --shadow-card: 0 1px 4px rgba(139, 94, 60, 0.03), 0 4px 16px rgba(139, 94, 60, 0.03);
+    --shadow-card-hover: 0 2px 8px rgba(139, 94, 60, 0.05), 0 8px 24px rgba(139, 94, 60, 0.04);
+
+    --salmon: 16 60% 72%;
+    --sage: 140 25% 62%;
 
     --olive: 80 27% 48%;
     --lavender: 270 62% 92%;
