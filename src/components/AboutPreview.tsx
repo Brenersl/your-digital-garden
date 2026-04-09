@@ -4,9 +4,9 @@ import aboutImg from "@/assets/idamir-about.jpeg";
 
 const AboutPreview = () => {
   return (
-    <section id="sobre" className="py-24 bg-card">
+    <section id="sobre" className="py-28 bg-card">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -15,12 +15,12 @@ const AboutPreview = () => {
           >
             <span className="text-sage uppercase tracking-[0.2em] text-xs font-medium">Sobre</span>
             <h2
-              className="text-3xl md:text-4xl mt-4 mb-6 text-balance"
+              className="text-2xl md:text-3xl mt-4 mb-6 text-balance"
               style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
             >
               <span className="text-salmon">Idamir Duarte</span>
             </h2>
-            <div className="space-y-5 text-muted-foreground text-[0.95rem] leading-[1.8] mb-8">
+            <div className="space-y-5 text-muted-foreground text-[0.875rem] leading-[1.9] mb-8">
               <p>
                 Sou psicóloga formada pela Faculdade Pitágoras, registrada no Conselho Regional de Psicologia sob o{" "}
                 <strong className="text-foreground font-medium">CRP 04/48538</strong>. Minha abordagem é fundamentada na{" "}
@@ -49,7 +49,7 @@ const AboutPreview = () => {
             <img
               src={aboutImg}
               alt="Psicóloga Idamir Duarte"
-              className="rounded-2xl object-cover w-full aspect-[3/4] max-h-[500px]"
+              className="rounded-2xl object-cover w-full aspect-[3/4] max-h-[480px]"
               style={{ boxShadow: "var(--shadow-card)" }}
             />
           </motion.div>

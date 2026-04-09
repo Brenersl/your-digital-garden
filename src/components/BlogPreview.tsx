@@ -25,7 +25,7 @@ const articles = [
 
 const BlogPreview = () => {
   return (
-    <section className="py-24">
+    <section className="py-28">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -36,14 +36,14 @@ const BlogPreview = () => {
         >
           <span className="text-sage uppercase tracking-[0.2em] text-xs font-medium">Blog</span>
           <h2
-            className="text-3xl md:text-4xl text-foreground mt-4 text-balance"
+            className="text-2xl md:text-3xl text-foreground mt-4 text-balance"
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Artigos sobre saúde mental
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
           {articles.map((article, i) => (
             <motion.div
               key={article.slug}
@@ -51,24 +51,24 @@ const BlogPreview = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 * (i + 1) }}
-              className="bg-card rounded-2xl p-8 flex flex-col border border-border/40"
+              className="bg-card rounded-2xl p-8 flex flex-col border border-border/30"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
               <h3
-                className="text-lg text-foreground mb-3 leading-snug"
+                className="text-[0.95rem] text-foreground mb-3 leading-snug"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                <span className="border-b border-salmon/30 pb-0.5">{article.title}</span>
+                <span className="border-b border-salmon/25 pb-0.5">{article.title}</span>
               </h3>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] flex-1 mb-6">
+              <p className="text-muted-foreground text-[0.8rem] leading-[1.85] flex-1 mb-6">
                 {article.description}
               </p>
               <Link
                 to="/blog"
-                className="inline-flex items-center gap-1.5 text-sage text-sm font-medium hover:opacity-80 transition-opacity"
+                className="inline-flex items-center gap-1.5 text-sage text-[0.8rem] font-medium hover:opacity-80 transition-opacity"
               >
                 Ler mais
-                <ArrowRight size={14} />
+                <ArrowRight size={13} />
               </Link>
             </motion.div>
           ))}

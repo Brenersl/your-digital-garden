@@ -35,10 +35,10 @@ Gostaria de informações sobre atendimento psicológico.
   };
 
   const inputClass =
-    "w-full rounded-xl border border-border bg-background px-4 py-3 text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all";
+    "w-full rounded-xl border border-border/60 bg-background px-5 py-3 text-foreground text-[0.85rem] placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-sage/20 transition-all";
 
   return (
-    <section id="contato" className="py-24 bg-card">
+    <section id="contato" className="py-28 bg-card">
       <div className="max-w-3xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -49,7 +49,7 @@ Gostaria de informações sobre atendimento psicológico.
         >
           <span className="text-sage uppercase tracking-[0.2em] text-xs font-medium">Contato</span>
           <h2
-            className="text-3xl md:text-4xl text-foreground mt-4 text-balance"
+            className="text-2xl md:text-3xl text-foreground mt-4 text-balance"
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Entre em contato
@@ -62,12 +62,12 @@ Gostaria de informações sobre atendimento psicológico.
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="bg-background rounded-2xl p-8 md:p-10 space-y-5"
+          className="bg-salmon/[0.03] rounded-2xl p-8 md:p-10 space-y-5 border border-salmon/8"
           style={{ boxShadow: "var(--shadow-card)" }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Nome</label>
+              <label className="block text-[0.8rem] font-medium text-foreground mb-2">Nome</label>
               <input
                 type="text"
                 name="nome"
@@ -79,7 +79,7 @@ Gostaria de informações sobre atendimento psicológico.
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">WhatsApp</label>
+              <label className="block text-[0.8rem] font-medium text-foreground mb-2">WhatsApp</label>
               <input
                 type="tel"
                 name="whatsapp"
@@ -93,7 +93,7 @@ Gostaria de informações sobre atendimento psicológico.
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-foreground mb-2">
+            <label className="block text-[0.8rem] font-medium text-foreground mb-2">
               Atendimento: para você ou outra pessoa?
             </label>
             <select
@@ -111,7 +111,7 @@ Gostaria de informações sobre atendimento psicológico.
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Idade</label>
+              <label className="block text-[0.8rem] font-medium text-foreground mb-2">Idade</label>
               <input
                 type="text"
                 name="idade"
@@ -123,7 +123,7 @@ Gostaria de informações sobre atendimento psicológico.
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Profissão</label>
+              <label className="block text-[0.8rem] font-medium text-foreground mb-2">Profissão</label>
               <input
                 type="text"
                 name="profissao"
@@ -137,7 +137,7 @@ Gostaria de informações sobre atendimento psicológico.
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-foreground mb-2">Já fez terapia antes?</label>
+            <label className="block text-[0.8rem] font-medium text-foreground mb-2">Já fez terapia antes?</label>
             <select
               name="jaFezTerapia"
               required
@@ -152,7 +152,7 @@ Gostaria de informações sobre atendimento psicológico.
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-foreground mb-2">
+            <label className="block text-[0.8rem] font-medium text-foreground mb-2">
               O que te motivou a buscar ajuda?
             </label>
             <textarea
@@ -168,10 +168,10 @@ Gostaria de informações sobre atendimento psicológico.
 
           <button
             type="submit"
-            className="w-full inline-flex items-center justify-center gap-2.5 bg-primary text-primary-foreground px-8 py-4 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
+            className="w-full inline-flex items-center justify-center gap-2.5 bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
           >
             Enviar e falar no WhatsApp
-            <WhatsAppIcon size={18} />
+            <WhatsAppIcon size={16} />
           </button>
         </motion.form>
       </div>
