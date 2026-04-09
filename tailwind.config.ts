@@ -52,6 +52,8 @@ export default {
         offwhite: "hsl(var(--offwhite))",
         nude: "hsl(var(--nude))",
         gold: "hsl(var(--gold))",
+        salmon: "hsl(var(--salmon))",
+        sage: "hsl(var(--sage))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

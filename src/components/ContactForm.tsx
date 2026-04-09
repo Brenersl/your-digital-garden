@@ -47,7 +47,7 @@ Gostaria de informações sobre atendimento psicológico.
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <span className="text-accent uppercase tracking-[0.2em] text-sm font-medium">Contato</span>
+          <span className="text-sage uppercase tracking-[0.2em] text-xs font-medium">Contato</span>
           <h2
             className="text-3xl md:text-4xl text-foreground mt-4 text-balance"
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}

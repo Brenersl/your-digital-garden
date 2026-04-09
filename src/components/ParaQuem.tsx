@@ -26,7 +26,7 @@ const ParaQuem = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <span className="text-accent uppercase tracking-[0.2em] text-sm font-medium">Atendimento</span>
+          <span className="text-sage uppercase tracking-[0.2em] text-xs font-medium">Atendimento</span>
           <h2
             className="text-3xl md:text-4xl text-foreground mt-4 mb-4 text-balance"
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
@@ -48,7 +48,7 @@ const ParaQuem = () => {
               transition={{ duration: 0.4, delay: 0.1 * (i + 1) }}
               className="flex items-start gap-4 py-4 border-b border-border last:border-b-0"
             >
-              <CheckCircle size={22} strokeWidth={1.5} className="text-primary mt-0.5 shrink-0" />
+              <CheckCircle size={20} strokeWidth={1.5} className="text-sage mt-0.5 shrink-0" />
               <p className="text-foreground text-base md:text-lg">{item}</p>
             </motion.div>
           ))}

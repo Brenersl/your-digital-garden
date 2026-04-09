@@ -13,14 +13,14 @@ const AboutPreview = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-accent uppercase tracking-[0.2em] text-sm font-medium">Sobre</span>
+            <span className="text-sage uppercase tracking-[0.2em] text-xs font-medium">Sobre</span>
             <h2
-              className="text-3xl md:text-4xl text-foreground mt-4 mb-6 text-balance"
+              className="text-3xl md:text-4xl mt-4 mb-6 text-balance"
               style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
             >
-              Idamir Duarte
+              <span className="text-salmon">Idamir Duarte</span>
             </h2>
-            <div className="space-y-5 text-muted-foreground leading-relaxed mb-8">
+            <div className="space-y-5 text-muted-foreground text-[0.95rem] leading-[1.8] mb-8">
               <p>
                 Sou psicóloga formada pela Faculdade Pitágoras, registrada no Conselho Regional de Psicologia sob o{" "}
                 <strong className="text-foreground font-medium">CRP 04/48538</strong>. Minha abordagem é fundamentada na{" "}
@@ -34,7 +34,7 @@ const AboutPreview = () => {
             </div>
             <Link
               to="/sobre"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
             >
               Saiba mais
             </Link>
