@@ -48,8 +48,8 @@
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Geist Sans', system-ui, -apple-system, sans-serif;
 
-    --shadow-card: 0 1px 4px rgba(139, 94, 60, 0.03), 0 4px 16px rgba(139, 94, 60, 0.03);
-    --shadow-card-hover: 0 2px 8px rgba(139, 94, 60, 0.05), 0 8px 24px rgba(139, 94, 60, 0.04);
+    --shadow-card: 0 1px 3px rgba(139, 94, 60, 0.02), 0 2px 8px rgba(139, 94, 60, 0.02);
+    --shadow-card-hover: 0 1px 4px rgba(139, 94, 60, 0.03), 0 4px 12px rgba(139, 94, 60, 0.03);
 
     --salmon: 16 60% 72%;
     --sage: 140 25% 62%;
@@ -92,10 +92,13 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
+    line-height: 1.75;
+    font-size: 0.9375rem;
   }
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
+    line-height: 1.3;
   }
 }
 

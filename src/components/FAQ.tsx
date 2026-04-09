@@ -31,7 +31,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section id="faq" className="py-24 bg-card">
+    <section id="faq" className="py-28 bg-card">
       <div className="max-w-3xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -42,7 +42,7 @@ const FAQ = () => {
         >
           <span className="text-sage uppercase tracking-[0.2em] text-xs font-medium">Dúvidas</span>
           <h2
-            className="text-3xl md:text-4xl text-foreground mt-4 text-balance"
+            className="text-2xl md:text-3xl text-foreground mt-4 text-balance"
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Perguntas Frequentes
@@ -60,13 +60,13 @@ const FAQ = () => {
               <AccordionItem
                 key={i}
                 value={`item-${i}`}
-                className="bg-background rounded-2xl px-6 border-none"
+                className="bg-salmon/[0.04] rounded-2xl px-7 border border-salmon/8"
                 style={{ boxShadow: "var(--shadow-card)" }}
               >
-                <AccordionTrigger className="text-foreground text-base md:text-lg font-medium hover:no-underline py-5">
+                <AccordionTrigger className="text-foreground text-[0.9rem] md:text-base font-medium hover:no-underline py-5">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-5">
+                <AccordionContent className="text-muted-foreground text-[0.85rem] leading-[1.85] pb-5">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
