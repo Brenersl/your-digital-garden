@@ -49,7 +49,7 @@ const AboutPreview = () => {
             <img
               src={aboutImg}
               alt="Psicóloga Idamir Duarte"
-              className="rounded-2xl object-contain w-full max-h-[520px]"
+              className="rounded-2xl object-cover object-top w-full h-[420px] md:h-[560px]"
               style={{ boxShadow: "var(--shadow-card)" }}
             />
           </motion.div>
