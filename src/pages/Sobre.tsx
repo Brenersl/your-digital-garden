@@ -55,11 +55,11 @@ const Sobre = () => {
           </motion.div>
 
           {/* Photo */}
-          <motion.div {...fadeIn} transition={{ duration: 0.5, delay: 0.05 }} className="flex justify-center mb-16">
+          <motion.div {...fadeIn} transition={{ duration: 0.5, delay: 0.05 }} className="flex justify-center mb-16 items-start">
             <img
               src={aboutImg}
               alt="Psicóloga Idamir Duarte"
-              className="rounded-2xl object-cover w-full max-w-md aspect-[3/4]"
+              className="rounded-2xl w-full max-w-md h-auto object-contain object-top"
               style={{ boxShadow: "var(--shadow-card)" }}
             />
           </motion.div>
