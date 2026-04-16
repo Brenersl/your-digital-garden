@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import aboutImg from "@/assets/idamir-about.jpeg";
+import aboutImg from "@/assets/idamir-about-full.png";
 
 const AboutPreview = () => {
   return (
@@ -41,6 +41,7 @@ const AboutPreview = () => {
           </motion.div>
 
           <motion.div
+            className="flex justify-center lg:justify-end"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -49,7 +50,7 @@ const AboutPreview = () => {
             <img
               src={aboutImg}
               alt="Psicóloga Idamir Duarte"
-              className="rounded-2xl w-full h-auto object-contain"
+              className="rounded-2xl w-full max-w-[560px] h-auto object-contain object-top"
               style={{ boxShadow: "var(--shadow-card)" }}
             />
           </motion.div>
