@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import aboutImg from "@/assets/idamir-prudem-1.png";
+import aboutImg from "@/assets/idamir-about.jpeg";
 
 const AboutPreview = () => {
   return (
@@ -50,7 +50,7 @@ const AboutPreview = () => {
             <img
               src={aboutImg}
               alt="Psicóloga Idamir Duarte"
-              className="rounded-2xl w-full max-w-[420px] lg:max-w-[460px] h-auto object-contain object-top"
+              className="rounded-2xl w-full max-w-[520px] h-auto object-contain object-top"
               style={{ boxShadow: "var(--shadow-card)" }}
             />
           </motion.div>
