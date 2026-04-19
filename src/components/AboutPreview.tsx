@@ -47,12 +47,18 @@ const AboutPreview = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <img
-              src={aboutImg}
-              alt="Psicóloga Idamir Duarte"
-              className="rounded-2xl w-full max-w-[520px] h-auto object-contain object-top"
-              style={{ boxShadow: "var(--shadow-card)" }}
-            />
+            <div className="w-full max-w-[440px] sm:max-w-[520px] lg:max-w-[620px]">
+              <img
+                src={aboutImg}
+                alt="Psicóloga Idamir Duarte"
+                className="block w-full h-auto max-h-none rounded-2xl"
+                style={{
+                  boxShadow: "var(--shadow-card)",
+                  objectFit: "contain",
+                  objectPosition: "top center",
+                }}
+              />
+            </div>
           </motion.div>
         </div>
       </div>
