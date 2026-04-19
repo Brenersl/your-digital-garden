@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
-import aboutImg from "@/assets/idamir-about.png";
+import aboutImg from "@/assets/idamir-about.jpeg";
 import prudemImg1 from "@/assets/idamir-prudem-1.png";
 import prudemImg2 from "@/assets/idamir-prudem-2.png";
 
