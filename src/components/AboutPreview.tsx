@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import aboutImg from "@/assets/idamir-about.jpeg";
+import aboutImg from "@/assets/idamir-about.png";
 
 const AboutPreview = () => {
   return (
