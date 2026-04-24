@@ -47,13 +47,10 @@ const Agendamento = () => {
             className="bg-card rounded-2xl overflow-hidden mb-12"
             style={{ boxShadow: "var(--shadow-card)" }}
           >
-            <iframe
-              src="https://calendly.com/idamirpsi/30min"
-              width="100%"
-              height="700"
-              frameBorder="0"
-              title="Agendar consulta"
-              className="w-full"
+            <div
+              className="calendly-inline-widget w-full"
+              data-url="https://calendly.com/idamirpsi/30min?hide_gdpr_banner=1"
+              style={{ minWidth: "320px", height: "700px" }}
             />
           </motion.div>
 
