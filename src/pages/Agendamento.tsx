@@ -7,12 +7,19 @@ import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 const Agendamento = () => {
   useEffect(() => {
+    const link = document.createElement("link");
+    link.href = "https://assets.calendly.com/assets/external/widget.css";
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+
     const script = document.createElement("script");
     script.src = "https://assets.calendly.com/assets/external/widget.js";
     script.async = true;
     document.body.appendChild(script);
+
     return () => {
-      document.body.removeChild(script);
+      if (document.head.contains(link)) document.head.removeChild(link);
+      if (document.body.contains(script)) document.body.removeChild(script);
     };
   }, []);
 
@@ -49,9 +56,18 @@ const Agendamento = () => {
           >
             <div
               className="calendly-inline-widget w-full"
-              data-url="https://calendly.com/idamirpsi/30min?hide_gdpr_banner=1"
-              style={{ minWidth: "320px", height: "700px" }}
+              data-url="https://calendly.com/idamirpsi/30min?hide_gdpr_banner=1&hide_landing_page_details=0&primary_color=8B7355"
+              style={{ minWidth: "320px", width: "100%", height: "700px" }}
             />
+            <noscript>
+              <a
+                href="https://calendly.com/idamirpsi/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agendar pelo Calendly
+              </a>
+            </noscript>
           </motion.div>
 
           <motion.div
