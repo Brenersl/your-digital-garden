@@ -28,22 +28,30 @@ const Agendamento = () => {
       <Header />
 
       <section className="pt-32 pb-24">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-12"
+            className="text-center mb-14"
           >
-            <span className="text-accent uppercase tracking-[0.2em] text-sm font-medium">Agendamento</span>
+            <span className="text-accent uppercase tracking-[0.25em] text-sm font-medium">
+              Agendamento
+            </span>
+
             <h1
-              className="text-3xl md:text-5xl text-foreground mt-4 mb-4 text-balance"
-              style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
+              className="text-4xl md:text-6xl text-foreground mt-4 mb-5 text-balance"
+              style={{
+                fontFamily: "var(--font-display)",
+                letterSpacing: "-0.03em",
+              }}
             >
               Agende seu atendimento
             </h1>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Escolha o melhor horário para sua sessão. O atendimento pode ser presencial ou online, conforme sua preferência.
+
+            <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+              Escolha o melhor horário para sua sessão. Atendimento presencial
+              ou online, com praticidade e conforto.
             </p>
           </motion.div>
 
@@ -51,14 +59,22 @@ const Agendamento = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-card rounded-2xl overflow-hidden mb-12"
-            style={{ boxShadow: "var(--shadow-card)" }}
+            className="bg-white rounded-3xl overflow-hidden mb-14 border border-border/40"
+            style={{
+              boxShadow:
+                "0 20px 60px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.05)",
+            }}
           >
             <div
               className="calendly-inline-widget w-full"
-              data-url="https://calendly.com/idamirpsi/30min?hide_gdpr_banner=1&hide_landing_page_details=0&primary_color=8B7355"
-              style={{ minWidth: "320px", width: "100%", height: "700px" }}
+              data-url="https://calendly.com/idamirpsi/30min?hide_gdpr_banner=1&hide_landing_page_details=1&primary_color=8B7355"
+              style={{
+                minWidth: "320px",
+                width: "100%",
+                height: "950px",
+              }}
             />
+
             <noscript>
               <a
                 href="https://calendly.com/idamirpsi/30min"
@@ -76,17 +92,18 @@ const Agendamento = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-center"
           >
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-6 text-lg">
               Prefere agendar diretamente pelo WhatsApp?
             </p>
+
             <a
               href="https://wa.me/5531971301409?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.98]"
+              className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-10 py-4 rounded-full text-base font-medium hover:opacity-90 hover:scale-[1.02] transition-all duration-300 active:scale-[0.98] shadow-lg"
             >
               Agendar pelo WhatsApp
-              <WhatsAppIcon size={18} />
+              <WhatsAppIcon size={20} />
             </a>
           </motion.div>
         </div>
